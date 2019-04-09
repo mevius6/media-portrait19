@@ -1,0 +1,323 @@
+/* ========== Normalize ========== */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+article,
+figcaption,
+figure,
+footer,
+header,
+section {
+    display: block;
+}
+body {
+    margin: 0;
+}
+ol,
+ul {
+    list-style: none;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+    /* margin: 0.67em 0; */
+}
+b,
+strong {
+    font-weight: bolder;
+}
+
+/* ========= BS ========= */
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    background: #30e60b;
+    text-shadow: none;
+}
+
+::selection {
+    background: #30e60b;
+    text-shadow: none;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Favorit";
+    src: url(/fonts/FavoritPro-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    display: Fallback;
+}
+
+@font-face {
+    font-family: "Favorit-M";
+    src: url(/fonts/FavoritPro-Medium.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    display: Fallback;
+}
+
+@font-face {
+    font-family: "Galapagos-Grid";
+    src: url(/fonts/GalapagosABC-LightGrid.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    display: Fallback;
+}
+
+@font-face {
+    font-family: "Galapagos";
+    src: url(/fonts/GalapagosABC-Light.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    display: Fallback;
+}
+
+body {
+    --bg-img-1: url(/img/1.jpg);
+    --bg-img-2: url(/img/1.gif);
+    --bg-img-3: url(/img/3.jpg);
+    --bg-img-4: url(/img/4.jpg);
+    --bg-img-5: url(/img/2.gif);
+    --bg-img-6: url(/img/4.jpg);
+    --bg-img-7: url(/img/5.jpg);
+    --spacing: 1rem;
+    --color-fg: hsl(0, 0%, 100%);
+    --color-bg: hsl(0, 0%, 98%);
+    --color-rm: hsl(0, 0%, 90.2%);
+    --color-bd: hsl(0, 0%, 14.9%); /* hsl(0, 0%, 13.3%) */
+    --color-bs: hsl(0, 0%, 13.3%); /* hsl(0, 0%, 9.4%) */
+    margin-top: 0;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    font-family: "Favorit";
+    font-size: 130%; /* ≤133% */
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--color-bd);
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 120%;
+    }
+}
+
+/* ========= LT ========= */
+
+.page-header {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header__title {
+    margin: 2.75rem 0 var(--spacing);
+
+    font-size: calc(var(--spacing) + 3vw);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.page-header__grid {
+    padding: 0 0 calc(var(--spacing) * 4);
+    display: grid;
+    max-width: 90vw; /* ≤92vw */
+    grid:
+        "."
+        "bd" auto
+        / 1fr;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    grid:
+        "." auto
+        "bd"
+        "."
+        / 1fr;
+}
+
+.grid__item-text {
+    grid-area: bd;
+    align-self: center;
+    min-height: 25vw;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: var(--spacing);
+
+    background: var(--color-fg);
+    -webkit-box-shadow: 0 2rem 4rem var(--color-bs);
+    -moz-box-shadow: 0 2rem 4rem var(--color-bs);
+    box-shadow: 0 2rem 4rem var(--color-bs);
+    border: 1px solid var(--color-rm);
+    border-radius: 3px;
+}
+
+.grid__item-img {
+    position: relative;
+    padding-bottom: calc((2 / 3) * 100%);
+
+    background-position: bottom center;
+    background-size: 100vh; /* 122% */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.grid__col-l,
+.grid__col-r,
+.grid__cell {
+    display: none;
+}
+
+.text {
+    font-size: 125%;
+}
+
+@media (max-width: 700px) {
+    .text {
+        font-size: 100%;
+    }
+}
+
+.text--wght-m {
+    font-family: "Favorit-M";
+    font-weight: 500;
+    margin-bottom: 1.25em;
+}
+
+.figure {
+    margin-top: 0;
+    font: 25vw/1 "Galapagos";
+    padding-right: 0.4px; /* ~.33px */
+}
+
+.page-footer {
+    min-height: 7.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 35em) {
+    /* clearfix */
+    .grid:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @supports (display: grid) {
+        /* override */
+        .grid > *,
+        .page-header__grid > * {
+            margin: 0;
+        }
+        .grid__item-img {
+            width: auto;
+            margin: 0;
+            background-size: 50%;
+        }
+        .grid:after {
+            content: none;
+        }
+
+        .page-header__grid {
+            padding: calc(var(--spacing) * 9) 0;
+            display: grid;
+            grid-column-gap: var(--spacing);
+            max-width: 83.33vw;
+            grid:
+                ". bd" auto
+                / 1fr 1fr;
+        }
+
+        .grid {
+            position: static;
+            display: -ms-grid;
+            display: grid;
+            grid:
+                ". bd ." auto
+                / [l] 25% [c] 1fr [r] 25% [full-end];
+        }
+
+        .grid__item {
+            grid-area: 1 / c / 2 / r;
+        }
+
+        .grid__col-l,
+        .grid__col-r {
+            display: flex;
+            flex-flow: column;
+        }
+
+        .grid__col-l {
+            grid-area: 1 / l;
+        }
+
+        .grid__col-r {
+            grid-area: 1 / r;
+            text-align: right;
+        }
+
+        .grid__col-l > *,
+        .grid__col-r > * {
+            margin-bottom: 0;
+        }
+
+        .grid__cell {
+            grid-area: 1 / l / 2 / full-end;
+            z-index: -1;
+
+            display: flex;
+            flex-flow: column;
+            font: 25vw/1 "Galapagos-Grid";
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .grid--two-col {
+            grid:
+                "bd ." auto
+                / [l] 1fr [r] 1fr [full-end];
+        }
+
+        .grid--two-col-flip {
+            grid:
+                ". bd" auto
+                / [l] 1fr [r] 1fr [full-end];
+        }
+    }
+}
