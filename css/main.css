@@ -96,18 +96,20 @@ html {
 
 body {
     --bg-img-1: url(/img/1.jpg);
-    --bg-img-2: url(/img/1.gif);
+    --bg-img-2: url(/img/2.jpg);
     --bg-img-3: url(/img/3.jpg);
     --bg-img-4: url(/img/4.jpg);
-    --bg-img-5: url(/img/2.gif);
-    --bg-img-6: url(/img/4.jpg);
-    --bg-img-7: url(/img/5.jpg);
+    --bg-img-5: url(/img/5.gif);
+    --bg-img-6: url(/img/6.gif);
+    --bg-img-7: url(/img/7.jpg);
+    --bg-img-8: url(/img/8.gif);
+    --bg-img-9: url(/img/9.jpg); 
     --spacing: 1rem;
     --color-fg: hsl(0, 0%, 100%);
     --color-bg: hsl(0, 0%, 98%);
     --color-rm: hsl(0, 0%, 90.2%);
-    --color-bd: hsl(0, 0%, 14.9%); /* hsl(0, 0%, 13.3%) */
-    --color-bs: hsl(0, 0%, 13.3%); /* hsl(0, 0%, 9.4%) */
+    --color-bd: hsl(0, 0%, 14.9%);
+    --color-bs: hsl(0, 0%, 13.3%);
     margin-top: 0;
     min-height: 100vh;
     background-color: var(--color-bg);
