@@ -135,7 +135,6 @@ body {
 .page-header {
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -144,7 +143,6 @@ body {
 
 .page-header__title {
     margin: 2.75rem 0 var(--spacing);
-
     font-size: calc(var(--spacing) + 3vw);
     font-weight: 400;
     line-height: 1.15;
@@ -174,12 +172,10 @@ body {
     grid-area: bd;
     align-self: center;
     min-height: 25vw;
-
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding: var(--spacing);
-
     background: var(--color-fg);
     -webkit-box-shadow: 0 2rem 4rem var(--color-bs);
     -moz-box-shadow: 0 2rem 4rem var(--color-bs);
@@ -191,7 +187,6 @@ body {
 .grid__item-img {
     position: relative;
     padding-bottom: calc((2 / 3) * 100%);
-
     background-position: bottom center;
     background-size: 100vh; /* 122% */
     background-attachment: fixed;
