@@ -118,7 +118,7 @@ body {
     font-weight: 400;
     line-height: 1.45;
     color: var(--color-bd);
-    font-feature-settings: "kern" 1;
+    font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
