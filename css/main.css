@@ -10,12 +10,12 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 }
 
 ::-moz-selection {
-    background: #30e60b;
+    background: transparent;
     text-shadow: none;
 }
 
 ::selection {
-    background: #30e60b;
+    background: transparent;
     text-shadow: none;
 }
 
