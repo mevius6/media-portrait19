@@ -1,42 +1,12 @@
-/* ========== Normalize ========== */
+html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;box-sizing:border-box;scroll-behavior:smooth}article,figcaption,figure,footer,header,section{display:block}body,h1{margin:0}ol,ul{list-style:none}h1{font-size:2em;font-weight:400}b,strong{font-weight:bolder}
 
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-article,
-figcaption,
-figure,
-footer,
-header,
-section {
-    display: block;
-}
-body {
+*,
+*::before,
+*::after {
     margin: 0;
-}
-ol,
-ul {
-    list-style: none;
-}
-h1 {
-    font-size: 2em;
-    font-weight: 400;
-    margin: 0;
-}
-b,
-strong {
-    font-weight: bolder;
-}
-
-/* ========= BS ========= */
-
-html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 ::-moz-selection {
@@ -47,15 +17,6 @@ html {
 ::selection {
     background: #30e60b;
     text-shadow: none;
-}
-
-*,
-*:before,
-*:after {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: inherit;
 }
 
 @font-face {
@@ -127,8 +88,6 @@ body {
         font-size: 120%;
     }
 }
-
-/* ========= LT ========= */
 
 .page-header {
     width: 100vw;
