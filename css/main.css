@@ -24,7 +24,7 @@ ul {
 h1 {
     font-size: 2em;
     font-weight: 400;
-    /* margin: 0.67em 0; */
+    margin: 0;
 }
 b,
 strong {
@@ -222,7 +222,6 @@ body {
 }
 
 .figure {
-    margin-top: 0;
     font: 25vw/1 "Galapagos";
     padding-right: 0.4px; /* .33px */
 }
