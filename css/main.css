@@ -70,8 +70,9 @@ body {
     --color-bs: hsl(0, 0%, 13.3%);
     margin-top: 0;
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--color-bg);
-    font-family: "Favorit";
+    font-family: Favorit;
     font-size: 130%; /* ≤133% */
     font-weight: 400;
     line-height: 1.45;
@@ -80,7 +81,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden; 
 }
 
 @media (max-width: 700px) {
@@ -179,13 +179,13 @@ body {
 }
 
 .text--wght-m {
-    font-family: "Favorit-M";
+    font-family: Favorit-M;
     font-weight: 500;
     margin-bottom: 1.25em;
 }
 
 .figure {
-    font: 25vw/1 "Galapagos";
+    font: 25vw/1 Galapagos;
     padding-right: 0.4px; /* .33px */
 }
 
@@ -266,7 +266,7 @@ body {
 
             display: flex;
             flex-flow: column;
-            font: 25vw/1 "Galapagos-Grid";
+            font: 25vw/1 Galapagos-Grid;
             white-space: nowrap;
             overflow: hidden;
         }
