@@ -19,7 +19,7 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 }
 
 @font-face {
-    font-family: "Favorit";
+    font-family: Favorit;
     src: url(/fonts/FavoritPro-Regular.woff) format("woff");
     font-style: normal;
     font-weight: normal;
@@ -28,7 +28,7 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 }
 
 @font-face {
-    font-family: "Favorit-M";
+    font-family: Favorit-M;
     src: url(/fonts/FavoritPro-Medium.woff) format("woff");
     font-style: normal;
     font-weight: normal;
@@ -37,7 +37,7 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 }
 
 @font-face {
-    font-family: "Galapagos-Grid";
+    font-family: Galapagos-Grid;
     src: url(/fonts/GalapagosABC-LightGrid.woff) format("woff");
     font-style: normal;
     font-weight: normal;
@@ -46,7 +46,7 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 }
 
 @font-face {
-    font-family: "Galapagos";
+    font-family: Galapagos;
     src: url(/fonts/GalapagosABC-Light.woff) format("woff");
     font-style: normal;
     font-weight: normal;
@@ -159,8 +159,7 @@ body {
 }
 
 .vimeo-video {
-    padding: 56.25% 0 0 0;
-    position: relative;
+    display: contents;
 }
 
 .grid__col-l,
