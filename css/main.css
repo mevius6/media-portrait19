@@ -83,6 +83,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+body.loading {
+	overflow: hidden
+}
+
 @media (max-width: 700px) {
 	body {
 		font-size: 120%;
